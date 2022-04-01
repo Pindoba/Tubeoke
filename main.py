@@ -12,7 +12,7 @@ import threading
 
 
 
-# open("TXT.txt", -W)
+
 link_videos = []
 
 def limpar():
@@ -33,7 +33,6 @@ def limpar():
 
 def pesquisa():
     threading.Thread(target=limpar).start()
-    # limpar()
     n = 0
     n_2 = 0
 
@@ -50,7 +49,7 @@ def pesquisa():
     
 
     for i in id_videos: 
-        n = n + 1
+        n += 1
         if n <= 10:
               
             link_videos.append(base+i)
@@ -61,7 +60,7 @@ def pesquisa():
     for i in link_videos:
         # n_2 = n_2 + 1
         if n_2 <=10:
-
+            
             yt = YouTube(i)
             link_img.append(yt.thumbnail_url)
             titulo.append(yt.title)
@@ -99,7 +98,7 @@ def pesquisa():
                 forme.img_18.setPixmap(QtGui.QPixmap("imag9.jpg"))
             else:
                 pass
-            n_2 = n_2 + 1
+            n_2 += 1
         else:
             pass
         
