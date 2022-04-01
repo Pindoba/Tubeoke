@@ -9,7 +9,7 @@ from PyQt5 import uic, QtWidgets, QtGui
 from pytube import YouTube
 import time
 import threading
-#sdsds
+
 
 
 # open("TXT.txt", -W)
