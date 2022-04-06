@@ -11,7 +11,12 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>TubeOkê</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normalon>../../../Meus apps/Tubeoke_2.0.0/pixmap.png</normalon>
+   </iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
    <property name="styleSheet">
@@ -35,8 +40,8 @@
     <widget class="QLineEdit" name="lineEdit">
      <property name="geometry">
       <rect>
-       <x>40</x>
-       <y>20</y>
+       <x>20</x>
+       <y>30</y>
        <width>331</width>
        <height>36</height>
       </rect>
@@ -54,8 +59,8 @@ background-color: rgb(85, 87, 83);</string>
     <widget class="QPushButton" name="pushButton_2">
      <property name="geometry">
       <rect>
-       <x>400</x>
-       <y>20</y>
+       <x>380</x>
+       <y>30</y>
        <width>121</width>
        <height>36</height>
       </rect>
@@ -1141,27 +1146,844 @@ background-color: rgb(85, 87, 83);</string>
           <enum>Qt::Horizontal</enum>
          </property>
         </widget>
-        <widget class="QLabel" name="label_3">
+        <widget class="QPushButton" name="play">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
          <property name="geometry">
           <rect>
-           <x>380</x>
-           <y>20</y>
+           <x>420</x>
+           <y>10</y>
            <width>91</width>
-           <height>31</height>
+           <height>41</height>
           </rect>
+         </property>
+         <property name="sizeIncrement">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="baseSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
          </property>
          <property name="font">
           <font>
-           <pointsize>20</pointsize>
-           <weight>75</weight>
-           <bold>true</bold>
+           <pointsize>13</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+           <underline>false</underline>
+           <strikeout>false</strikeout>
+           <kerning>true</kerning>
           </font>
          </property>
+         <property name="mouseTracking">
+          <bool>false</bool>
+         </property>
+         <property name="acceptDrops">
+          <bool>false</bool>
+         </property>
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
          <property name="styleSheet">
-          <string notr="true">color: rgb(78, 154, 6);</string>
+          <string notr="true">color: rgb(255, 255, 255);
+color: rgb(255, 255, 255);
+border-top-left-radius: 7px;
+border-top-right-radius: 21px;
+border-bottom-left-radius: 7px;
+border-bottom-right-radius: 20px;
+
+border: 0px solid black;
+
+
+
+
+
+</string>
          </property>
          <property name="text">
-          <string>Play</string>
+          <string>PLAY </string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <disabledon>icon/play.png</disabledon>
+          </iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>37</width>
+           <height>37</height>
+          </size>
+         </property>
+         <property name="shortcut">
+          <string>Ctrl+R</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="play_2">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>420</x>
+           <y>220</y>
+           <width>91</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="sizeIncrement">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="baseSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>13</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+           <underline>false</underline>
+           <strikeout>false</strikeout>
+           <kerning>true</kerning>
+          </font>
+         </property>
+         <property name="mouseTracking">
+          <bool>false</bool>
+         </property>
+         <property name="acceptDrops">
+          <bool>false</bool>
+         </property>
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);
+color: rgb(255, 255, 255);
+border-top-left-radius: 7px;
+border-top-right-radius: 21px;
+border-bottom-left-radius: 7px;
+border-bottom-right-radius: 20px;
+
+border: 0px solid black;
+
+
+
+
+
+</string>
+         </property>
+         <property name="text">
+          <string>PLAY </string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <disabledon>icon/play.png</disabledon>
+          </iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>37</width>
+           <height>37</height>
+          </size>
+         </property>
+         <property name="shortcut">
+          <string>Ctrl+R</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="play_3">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>420</x>
+           <y>420</y>
+           <width>91</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="sizeIncrement">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="baseSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>13</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+           <underline>false</underline>
+           <strikeout>false</strikeout>
+           <kerning>true</kerning>
+          </font>
+         </property>
+         <property name="mouseTracking">
+          <bool>false</bool>
+         </property>
+         <property name="acceptDrops">
+          <bool>false</bool>
+         </property>
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);
+color: rgb(255, 255, 255);
+border-top-left-radius: 7px;
+border-top-right-radius: 21px;
+border-bottom-left-radius: 7px;
+border-bottom-right-radius: 20px;
+
+border: 0px solid black;
+
+
+
+
+
+</string>
+         </property>
+         <property name="text">
+          <string>PLAY </string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <disabledon>icon/play.png</disabledon>
+          </iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>37</width>
+           <height>37</height>
+          </size>
+         </property>
+         <property name="shortcut">
+          <string>Ctrl+R</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="play_4">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>420</x>
+           <y>600</y>
+           <width>91</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="sizeIncrement">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="baseSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>13</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+           <underline>false</underline>
+           <strikeout>false</strikeout>
+           <kerning>true</kerning>
+          </font>
+         </property>
+         <property name="mouseTracking">
+          <bool>false</bool>
+         </property>
+         <property name="acceptDrops">
+          <bool>false</bool>
+         </property>
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);
+color: rgb(255, 255, 255);
+border-top-left-radius: 7px;
+border-top-right-radius: 21px;
+border-bottom-left-radius: 7px;
+border-bottom-right-radius: 20px;
+
+border: 0px solid black;
+
+
+
+
+
+</string>
+         </property>
+         <property name="text">
+          <string>PLAY </string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <disabledon>icon/play.png</disabledon>
+          </iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>37</width>
+           <height>37</height>
+          </size>
+         </property>
+         <property name="shortcut">
+          <string>Ctrl+R</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="play_5">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>420</x>
+           <y>790</y>
+           <width>91</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="sizeIncrement">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="baseSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>13</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+           <underline>false</underline>
+           <strikeout>false</strikeout>
+           <kerning>true</kerning>
+          </font>
+         </property>
+         <property name="mouseTracking">
+          <bool>false</bool>
+         </property>
+         <property name="acceptDrops">
+          <bool>false</bool>
+         </property>
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);
+color: rgb(255, 255, 255);
+border-top-left-radius: 7px;
+border-top-right-radius: 21px;
+border-bottom-left-radius: 7px;
+border-bottom-right-radius: 20px;
+
+border: 0px solid black;
+
+
+
+
+
+</string>
+         </property>
+         <property name="text">
+          <string>PLAY </string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <disabledon>icon/play.png</disabledon>
+          </iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>37</width>
+           <height>37</height>
+          </size>
+         </property>
+         <property name="shortcut">
+          <string>Ctrl+R</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="play_6">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>420</x>
+           <y>980</y>
+           <width>91</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="sizeIncrement">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="baseSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>13</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+           <underline>false</underline>
+           <strikeout>false</strikeout>
+           <kerning>true</kerning>
+          </font>
+         </property>
+         <property name="mouseTracking">
+          <bool>false</bool>
+         </property>
+         <property name="acceptDrops">
+          <bool>false</bool>
+         </property>
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);
+color: rgb(255, 255, 255);
+border-top-left-radius: 7px;
+border-top-right-radius: 21px;
+border-bottom-left-radius: 7px;
+border-bottom-right-radius: 20px;
+
+border: 0px solid black;
+
+
+
+
+
+</string>
+         </property>
+         <property name="text">
+          <string>PLAY </string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <disabledon>icon/play.png</disabledon>
+          </iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>37</width>
+           <height>37</height>
+          </size>
+         </property>
+         <property name="shortcut">
+          <string>Ctrl+R</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="play_7">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>420</x>
+           <y>1170</y>
+           <width>91</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="sizeIncrement">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="baseSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>13</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+           <underline>false</underline>
+           <strikeout>false</strikeout>
+           <kerning>true</kerning>
+          </font>
+         </property>
+         <property name="mouseTracking">
+          <bool>false</bool>
+         </property>
+         <property name="acceptDrops">
+          <bool>false</bool>
+         </property>
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);
+color: rgb(255, 255, 255);
+border-top-left-radius: 7px;
+border-top-right-radius: 21px;
+border-bottom-left-radius: 7px;
+border-bottom-right-radius: 20px;
+
+border: 0px solid black;
+
+
+
+
+
+</string>
+         </property>
+         <property name="text">
+          <string>PLAY </string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <disabledon>icon/play.png</disabledon>
+          </iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>37</width>
+           <height>37</height>
+          </size>
+         </property>
+         <property name="shortcut">
+          <string>Ctrl+R</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="play_8">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>420</x>
+           <y>1360</y>
+           <width>91</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="sizeIncrement">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="baseSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>13</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+           <underline>false</underline>
+           <strikeout>false</strikeout>
+           <kerning>true</kerning>
+          </font>
+         </property>
+         <property name="mouseTracking">
+          <bool>false</bool>
+         </property>
+         <property name="acceptDrops">
+          <bool>false</bool>
+         </property>
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);
+color: rgb(255, 255, 255);
+border-top-left-radius: 7px;
+border-top-right-radius: 21px;
+border-bottom-left-radius: 7px;
+border-bottom-right-radius: 20px;
+
+border: 0px solid black;
+
+
+
+
+
+</string>
+         </property>
+         <property name="text">
+          <string>PLAY </string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <disabledon>icon/play.png</disabledon>
+          </iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>37</width>
+           <height>37</height>
+          </size>
+         </property>
+         <property name="shortcut">
+          <string>Ctrl+R</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="play_9">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>420</x>
+           <y>1550</y>
+           <width>91</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="sizeIncrement">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="baseSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>13</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+           <underline>false</underline>
+           <strikeout>false</strikeout>
+           <kerning>true</kerning>
+          </font>
+         </property>
+         <property name="mouseTracking">
+          <bool>false</bool>
+         </property>
+         <property name="acceptDrops">
+          <bool>false</bool>
+         </property>
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);
+color: rgb(255, 255, 255);
+border-top-left-radius: 7px;
+border-top-right-radius: 21px;
+border-bottom-left-radius: 7px;
+border-bottom-right-radius: 20px;
+
+border: 0px solid black;
+
+
+
+
+
+</string>
+         </property>
+         <property name="text">
+          <string>PLAY </string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <disabledon>icon/play.png</disabledon>
+          </iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>37</width>
+           <height>37</height>
+          </size>
+         </property>
+         <property name="shortcut">
+          <string>Ctrl+R</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="play_10">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>420</x>
+           <y>1750</y>
+           <width>91</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="sizeIncrement">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="baseSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>13</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+           <underline>false</underline>
+           <strikeout>false</strikeout>
+           <kerning>true</kerning>
+          </font>
+         </property>
+         <property name="mouseTracking">
+          <bool>false</bool>
+         </property>
+         <property name="acceptDrops">
+          <bool>false</bool>
+         </property>
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);
+color: rgb(255, 255, 255);
+border-top-left-radius: 7px;
+border-top-right-radius: 21px;
+border-bottom-left-radius: 7px;
+border-bottom-right-radius: 20px;
+
+border: 0px solid black;
+
+
+
+
+
+</string>
+         </property>
+         <property name="text">
+          <string>PLAY </string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <disabledon>icon/play.png</disabledon>
+          </iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>37</width>
+           <height>37</height>
+          </size>
+         </property>
+         <property name="shortcut">
+          <string>Ctrl+R</string>
          </property>
         </widget>
        </widget>
@@ -1171,6 +1993,25 @@ background-color: rgb(85, 87, 83);</string>
    </widget>
   </widget>
  </widget>
- <resources/>
- <connections/>
+ <resources>
+  <include location="icon.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>lineEdit</sender>
+   <signal>returnPressed()</signal>
+   <receiver>pushButton_2</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>283</x>
+     <y>57</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>413</x>
+     <y>57</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>

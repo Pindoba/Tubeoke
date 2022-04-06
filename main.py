@@ -10,14 +10,18 @@ from pytube import YouTube
 import time
 import threading
 
+import os
 
 
+titulo = []
 
 link_videos = []
 
 def limpar():
+
     global link_videos
     link_videos.clear()
+    titulo.clear()
     forme.status.setText("")
     forme.status_2.setText("")
     forme.status_5.setText("")
@@ -30,6 +34,98 @@ def limpar():
     forme.status_18.setText("")
     
     
+def play():
+    global titulo
+    nome = titulo[0]
+    nome_2= nome.replace(" ","\ ")
+    nome_3= nome_2.replace("(","\(")
+    nome_4= nome_3.replace(")","\)")
+    nome_5= nome_4.replace(",","")
+    os.system('vlc download/'+nome_5+'.mp4')
+
+def play1():
+    global titulo
+    nome = titulo[1]
+    nome_2= nome.replace(" ","\ ")
+    nome_3= nome_2.replace("(","\(")
+    nome_4= nome_3.replace(")","\)")
+    nome_5= nome_4.replace(",","")
+    os.system('vlc download/'+nome_5+'.mp4')
+    
+def play2():
+    global titulo
+    nome = titulo[2]
+    nome_2= nome.replace(" ","\ ")
+    nome_3= nome_2.replace("(","\(")
+    nome_4= nome_3.replace(")","\)")
+    nome_5= nome_4.replace(",","")
+    os.system('vlc download/'+nome_5+'.mp4')
+    
+def play3():
+    global titulo
+    nome = titulo[3]
+    nome_2= nome.replace(" ","\ ")
+    nome_3= nome_2.replace("(","\(")
+    nome_4= nome_3.replace(")","\)")
+    nome_5= nome_4.replace(",","")
+    os.system('vlc download/'+nome_5+'.mp4')
+    
+def play4():
+    global titulo
+    nome = titulo[4]
+    nome_2= nome.replace(" ","\ ")
+    nome_3= nome_2.replace("(","\(")
+    nome_4= nome_3.replace(")","\)")
+    nome_5= nome_4.replace(",","")
+    os.system('vlc download/'+nome_5+'.mp4')
+    
+def play5():
+    global titulo
+    nome = titulo[5]
+    nome_2= nome.replace(" ","\ ")
+    nome_3= nome_2.replace("(","\(")
+    nome_4= nome_3.replace(")","\)")
+    nome_5= nome_4.replace(",","")
+    os.system('vlc download/'+nome_5+'.mp4')
+    
+def play6():
+    global titulo
+    nome = titulo[6]
+    nome_2= nome.replace(" ","\ ")
+    nome_3= nome_2.replace("(","\(")
+    nome_4= nome_3.replace(")","\)")
+    nome_5= nome_4.replace(",","")
+    os.system('vlc download/'+nome_5+'.mp4')
+    
+def play7():
+    global titulo
+    nome = titulo[7]
+    nome_2= nome.replace(" ","\ ")
+    nome_3= nome_2.replace("(","\(")
+    nome_4= nome_3.replace(")","\)")
+    nome_5= nome_4.replace(",","")
+    os.system('vlc download/'+nome_5+'.mp4')
+    
+def play8():
+    global titulo
+    nome = titulo[8]
+    nome_2= nome.replace(" ","\ ")
+    nome_3= nome_2.replace("(","\(")
+    nome_4= nome_3.replace(")","\)")
+    nome_5= nome_4.replace(",","")
+    os.system('vlc download/'+nome_5+'.mp4')
+    
+def play9():
+    global titulo
+    nome = titulo[9]
+    nome_2= nome.replace(" ","\ ")
+    nome_3= nome_2.replace("(","\(")
+    nome_4= nome_3.replace(")","\)")
+    nome_5= nome_4.replace(",","")
+    os.system('vlc download/'+nome_5+'.mp4')
+    
+
+
 
 def pesquisa():
     threading.Thread(target=limpar).start()
@@ -45,7 +141,8 @@ def pesquisa():
     
     base = "https://www.youtube.com/watch?v="
     link_img = []
-    titulo = []
+    global titulo
+    
     
 
     for i in id_videos: 
@@ -117,7 +214,7 @@ def download_0():
     stream = video.streams.get_highest_resolution()   
     stream.download(output_path='download')
     forme.status.setText("CONCLUIDO")
-    QtWidgets.QFileDialog.getOpenFileName("download/Quando a chuva passar - Ivete - Karaokê Violão.mp4")
+    # QtWidgets.QFileDialog.getOpenFileName("download/Quando a chuva passar - Ivete - Karaokê Violão.mp4")
     print('ok')
 
 def download_1():
@@ -231,6 +328,28 @@ def t_9():
 def pesquisa_0():
     threading.Thread(target=pesquisa).start()
     
+def tocar():
+    threading.Thread(target=play).start()
+def tocar1():
+    threading.Thread(target=play1).start()
+def tocar2():
+    threading.Thread(target=play2).start()
+def tocar3():
+    threading.Thread(target=play3).start()
+def tocar4():
+    threading.Thread(target=play4).start()
+def tocar5():
+    threading.Thread(target=play5).start()
+def tocar6():
+    threading.Thread(target=play6).start()
+def tocar7():
+    threading.Thread(target=play7).start()
+def tocar8():
+    threading.Thread(target=play8).start()
+def tocar9():
+    threading.Thread(target=play9).start()
+
+
 
 forme.pushButton_2.clicked.connect(pesquisa_0)
 forme.pushButton.clicked.connect(t_0)
@@ -243,5 +362,19 @@ forme.pushButton_16.clicked.connect(t_6)
 forme.pushButton_17.clicked.connect(t_7)
 forme.pushButton_18.clicked.connect(t_8)
 forme.pushButton_19.clicked.connect(t_9)
+# forme.play.setEnable(True)
+forme.play.clicked.connect(tocar)
+
+forme.play_2.clicked.connect(tocar1)
+forme.play_3.clicked.connect(tocar2)
+forme.play_4.clicked.connect(tocar3)
+forme.play_5.clicked.connect(tocar4)
+forme.play_6.clicked.connect(tocar5)
+forme.play_7.clicked.connect(tocar6)
+forme.play_8.clicked.connect(tocar7)
+forme.play_9.clicked.connect(tocar8)
+forme.play_10.clicked.connect(tocar9)
+
+
 
 app.exec_()

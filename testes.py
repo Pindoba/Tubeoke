@@ -1,14 +1,6 @@
-from unittest import case
-import vlc
-import time
-video = "123.mp4"
-play = vlc.MediaPlayer(video)
+import os
+q = ['123','joao']
+# os.startfile(r'/home/welton/Documentos/Tubeoke/Tubeoke/download/123.mp4')
+# os.open(r'/home/welton/Documentos/Tubeoke/Tubeoke/download/123.mp4')
+os.system('vlc download/'+q[0]+'.mp4')
 
-play.play()
-
-time.sleep(2)
-
-while play.is_playing():
-    print("tocando")
-    time.sleep(2)
-print('acacou de tocar')
